@@ -1,0 +1,26 @@
+{
+  "list": [
+    {
+      "title": "Home",
+      "state": "home",
+      "desc": "",
+      "icon": ""
+    },
+    {
+      "title": "Task Board",
+      "state": "taskBoard",
+      "desc": "",
+      "icon": ""
+    },
+    {
+      "title": "Contacts",
+      "state": "contacts",
+      "desc": "",
+      "icon": ""
+    }
+  ],
+  "options": {
+    "size": "",
+    "bg-color": ""
+  }
+}

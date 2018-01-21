@@ -1,0 +1,10 @@
+<ul>
+    <li ng-repeat="item in flow.menu.list">
+        <a ui-sref="{{ item.state }}">{{ item.title }}</a>
+    </li>
+</ul>
+
+<div ui-view="list"></div>
+<div ui-view="social">
+
+</div>

@@ -1,0 +1,7 @@
+<div class="alert-popup" data-ng-class="{ 'alert-popup_open': model.visible }" ng-show="model.visible">
+    <div class="alert-popup__close icon__cross" data-ng-click="removeMessage()"/>
+
+    <div class="alert-popup__item alert-popup__item_{{message.type || 'warning'}}" data-ng-repeat="message in model.messages">
+        {{ message.message }}
+    </div>
+</div>

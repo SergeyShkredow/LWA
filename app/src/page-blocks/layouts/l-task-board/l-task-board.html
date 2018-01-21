@@ -1,0 +1,26 @@
+<div class="task-board">
+    <div class="task-board__header">
+        <h3>
+            Task Board
+        </h3>
+        <div class="task-board__download">
+            <button class="task-board__btn"
+                    data-ng-click="ctrl.getTasks()">
+                download
+            </button>
+        </div>
+    </div>
+    <div class="task-board__content">
+
+        <div class="task-board__task" 
+             data-ng-repeat="task in flow.taskBoard.model.list">
+            {{ task.name }}
+
+            <div data-close="{ 
+                    info: 10,
+                    position: $index
+                }"
+                 data-close-click="ctrl.onCancel"></div>
+        </div>
+    </div>
+</div>

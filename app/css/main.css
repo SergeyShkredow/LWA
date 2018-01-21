@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+.flow {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.flow__menu {
+    width: 200px;
+    height: 100%;
+}
+
+.flow__block-list {
+    height: 100%;
+    width: calc(100% - 200px);
+}
+
+.block {
+    width: 200px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 10px;
+    background-color: red;
+}
+.board-container {
+    background-color: wheat;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 100%;
+}
+.board-row {
+    display: block;
+    float: left;
+    min-width: 250px;
+    min-height: 800px;
+    background-color: lightyellow;
+    border: 1px solid green;
+}
+.container {
+    padding: 20px;
+    background-color: azure;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 250px;
+    min-height: 300px;
+    margin: 10px;
+}
+
+.task-board {
+    border: 1px solid gray;
+    height: 100%;
+}
+
+.task-board__header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-board__donwload {
+    display: flex;
+}
+
+.task-board__content {
+    display: flex;
+}
+
+.task-board__task {
+    margin: 20px;
+    padding: 10px;
+    min-width: 150px;
+    min-height: 150px;
+    border: 2px solid brown;
+    border-radius: 5px;
+    background-color:rgba(255, 174, 0, 0.623);
+    transition: .1s;
+}
+
+.task-board__task:hover {
+    background-color:rgba(255, 174, 0, 0.9);
+}
+
+.close {
+    position: absolute;
+    font-size: 14px;
+    right: 0;
+    top: 0;
+    padding: 8px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.close:hover {
+    font-size: 18px;
+    padding: 6px;
+}
+
+.alert-popup {
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 50%;
+
+    box-sizing: border-box;
+    width: 75%;
+    max-width: 700px;
+    margin: 0 auto;
+
+    transition: .2s;
+    transform: translate(-50%, -200px);
+
+    color: black;
+}
+
+.alert-popup_open {
+    transform: translate(-50%, 0);
+}
+
+.alert-popup__close {
+    font-size: 20px;
+
+    position: absolute;
+    top: 5px;
+    right: 10px;
+
+    cursor: pointer;
+}
+
+.alert-popup__item {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+}
+
+.alert-popup__list {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.alert-popup__item_error {
+    background: red;
+}
+
+.alert-popup__item_warning {
+    background: yellow;
+}
+
+.alert-popup__item_success {
+    background: green;
+}
